@@ -42,7 +42,16 @@ const columns = [
 		accessorKey: 'description',
 		header: 'Description',
 		enableSorting: false,
-		meta: { style: { whiteSpace: 'normal', wordBreak: 'break-word' } },
+		meta: {
+			style: {
+				whiteSpace: 'normal',
+				wordBreak: 'break-word',
+				display: '-webkit-box',
+				WebkitLineClamp: 3,
+				WebkitBoxOrient: 'vertical',
+				overflow: 'hidden',
+			},
+		},
 	},
 	{
 		accessorKey: 'incidentDate',

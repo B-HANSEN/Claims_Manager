@@ -10,10 +10,9 @@
 }
 
 .ClaimList__Table {
-	align-items: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: stretch;
 	padding: 0 64px;
 	box-sizing: border-box;
 	width: 100%;
