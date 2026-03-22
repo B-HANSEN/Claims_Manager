@@ -20,4 +20,4 @@ function formatDate(date = null) {
     return [year, month, day].join('-');
 }
 
-module.exports = { addMonths, generateId, formatDate };
+export { addMonths, generateId, formatDate };

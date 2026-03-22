@@ -1,5 +1,5 @@
-const yup = require('yup');
-const { addMonths } = require('./helper');
+import * as yup from 'yup';
+import { addMonths } from './helper.js';
 
 const claimPayloadSchema = yup.object({
 	amount: yup
@@ -26,4 +26,4 @@ const claimPayloadSchema = yup.object({
 		.required('incident date required'),
 });
 
-module.exports = { claimPayloadSchema };
+export { claimPayloadSchema };
