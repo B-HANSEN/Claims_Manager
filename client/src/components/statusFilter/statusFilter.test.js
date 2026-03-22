@@ -4,7 +4,7 @@ import StatusFilter from '.';
 
 describe('Status filter tests', () => {
 	it('should match snapshot', () => {
-		const { asFragment } = render(<StatusFilter filter='ShowAll' setFilter={vi.fn()} />);
+		const { asFragment } = render(<StatusFilter filter="ShowAll" setFilter={vi.fn()} />);
 		expect(asFragment()).toMatchSnapshot();
 	});
 

@@ -7,7 +7,7 @@ export const getClaimsList = async () => {
 
 		let allClaims = [];
 
-		data.map(item => {
+		data.map((item) => {
 			const mappedData = {
 				amount: Number(item.amount),
 				createdAt: item.createdAt,

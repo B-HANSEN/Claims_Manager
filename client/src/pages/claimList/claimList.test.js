@@ -15,9 +15,7 @@ describe('Claim List Page tests', () => {
 
 	it('should contain heading, label and button texts', () => {
 		const heading = screen.getByText(/overview claims/i);
-		const searchLabel = screen.getByText(
-			/search by id, holder name or policy/i
-		);
+		const searchLabel = screen.getByText(/search by id, holder name or policy/i);
 		const query = screen.getByPlaceholderText(/enter query here.../i);
 		const filter = screen.getByText(/show all/i);
 		const status = screen.getByText(/filter by claim status/i);

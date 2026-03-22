@@ -7,12 +7,11 @@ import './App.css';
 
 function App() {
 	return (
-		<div className='App'>
+		<div className="App">
 			<Routes>
-				<Route path='claims' element={<ClaimList />} />
-				<Route path='/create-claim' element={<CreateClaim />} />
-				<Route path='*' element={<NotFound />} />
-				<Route path='/' element={<AdminModal />} />
+				<Route path="/" element={<ClaimList />} />
+				<Route path="/create-claim" element={<CreateClaim />} />
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</div>
 	);
