@@ -32,7 +32,7 @@ exports[`Search Page tests > should match snapshot 1`] = `
      
     <button
       class="mb-2 btn btn-outline-secondary btn-lg"
-      type="submit"
+      type="button"
     >
       Reset
     </button>

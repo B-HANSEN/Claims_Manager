@@ -7,7 +7,7 @@ const StatusFilter = ({ filter, setFilter }) => {
 		<div className='StatusFilter'>
 			<p>Filter by claim status</p>
 			<Form.Select
-				aria-label='Default select example'
+				aria-label='Filter claims by status'
 				className='StatusFilter__Select'
 				id='status'
 				data-testid='select'

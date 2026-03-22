@@ -9,7 +9,7 @@ exports[`Status filter tests > should match snapshot 1`] = `
       Filter by claim status
     </p>
     <select
-      aria-label="Default select example"
+      aria-label="Filter claims by status"
       class="StatusFilter__Select form-select form-select-lg"
       data-testid="select"
       id="status"

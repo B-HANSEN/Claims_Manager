@@ -36,7 +36,7 @@ const ClaimList = () => {
 	return (
 		<div className='ClaimList'>
 			<Header />
-			<section className='ClaimList__MainSection'>
+			<main id='main-content' className='ClaimList__MainSection'>
 				<h1>Overview claims</h1>
 				<section className='ClaimList__Filter'>
 					<Search setValue={setSearchQuery} />
@@ -61,7 +61,7 @@ const ClaimList = () => {
 				<section className='ClaimList__Table'>
 					<ClaimsTable filteredClaims={filteredClaims} />
 				</section>
-			</section>
+			</main>
 		</div>
 	);
 };

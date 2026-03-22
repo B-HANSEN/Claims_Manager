@@ -9,7 +9,7 @@ const AdminModal = () => {
 
 	return (
 		searchParams.get('admin') && (
-			<Modal>
+			<Modal ariaLabel='Admin welcome'>
 				<div className='Modal'>
 					Welcome message to the Admin user
 					<Link to={{ pathname: '/claims' }}>Claims List</Link>

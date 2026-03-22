@@ -5,3 +5,6 @@ TODO.md
 .DS_Store
 .env
 .env.local
+
+.claude
+.qodo

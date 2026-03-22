@@ -7,10 +7,10 @@ const CreateClaim = () => {
 	return (
 		<div className='CreateClaim'>
 			<Header />
-			<section className='CreateClaim__MainSection'>
+			<main id='main-content' className='CreateClaim__MainSection'>
 				<h1>Create Claim</h1>
 				<ClaimsForm />
-			</section>
+			</main>
 		</div>
 	);
 };

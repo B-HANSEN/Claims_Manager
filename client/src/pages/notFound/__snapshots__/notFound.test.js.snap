@@ -2,8 +2,9 @@
 
 exports[`Not Found Page tests > should match snapshot 1`] = `
 <DocumentFragment>
-  <div
+  <main
     class="d-flex align-items-center justify-content-center vh-100"
+    id="main-content"
   >
     <div
       class="text-center"
@@ -37,6 +38,6 @@ exports[`Not Found Page tests > should match snapshot 1`] = `
         Go Home
       </a>
     </div>
-  </div>
+  </main>
 </DocumentFragment>
 `;

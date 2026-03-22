@@ -44,7 +44,7 @@ const Search = ({ setValue }) => {
 				className='mb-2'
 				onClick={reset}
 				size='lg'
-				type='submit'
+				type='button'
 				variant='outline-secondary'
 			>
 				Reset

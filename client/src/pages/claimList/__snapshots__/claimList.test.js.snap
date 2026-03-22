@@ -5,15 +5,16 @@ exports[`Claim List Page tests > should match snapshot 1`] = `
   <div
     class="ClaimList"
   >
-    <div
+    <header
       class="Header"
     >
       <h5>
         Header component
       </h5>
-    </div>
-    <section
+    </header>
+    <main
       class="ClaimList__MainSection"
+      id="main-content"
     >
       <h1>
         Overview claims
@@ -51,7 +52,7 @@ exports[`Claim List Page tests > should match snapshot 1`] = `
            
           <button
             class="mb-2 btn btn-outline-secondary btn-lg"
-            type="submit"
+            type="button"
           >
             Reset
           </button>
@@ -63,7 +64,7 @@ exports[`Claim List Page tests > should match snapshot 1`] = `
             Filter by claim status
           </p>
           <select
-            aria-label="Default select example"
+            aria-label="Filter claims by status"
             class="StatusFilter__Select form-select form-select-lg"
             data-testid="select"
             id="status"
@@ -125,60 +126,84 @@ exports[`Claim List Page tests > should match snapshot 1`] = `
           <table
             class="table table-striped table-hover table-sm"
           >
+            <caption
+              class="visually-hidden"
+            >
+              Claims overview
+            </caption>
             <thead>
               <tr>
                 <th
+                  scope="col"
                   style="cursor: default;"
                 >
                   Claim ID
                 </th>
                 <th
+                  scope="col"
                   style="cursor: default;"
                 >
                   Status
                 </th>
                 <th
+                  aria-sort="none"
+                  scope="col"
                   style="cursor: pointer;"
+                  tabindex="0"
                 >
                   Amount
                 </th>
                 <th
+                  scope="col"
                   style="cursor: default;"
                 >
                   Holder
                 </th>
                 <th
+                  scope="col"
                   style="cursor: default;"
                 >
                   Policy number
                 </th>
                 <th
+                  scope="col"
                   style="cursor: default;"
                 >
                   Insured item
                 </th>
                 <th
+                  scope="col"
                   style="cursor: default;"
                 >
                   Description
                 </th>
                 <th
+                  scope="col"
                   style="cursor: default;"
                 >
                   Incident date
                 </th>
                 <th
+                  aria-sort="none"
+                  scope="col"
                   style="cursor: pointer;"
+                  tabindex="0"
                 >
                   Processing fee
                 </th>
                 <th
+                  aria-sort="none"
+                  scope="col"
                   style="cursor: pointer;"
+                  tabindex="0"
                 >
                   Total amount
                 </th>
                 <th
+                  aria-sort="none"
+                  scope="col"
                   style="cursor: pointer;"
+                  tabindex="0"
                 >
                   Created at
                 </th>
@@ -186,28 +211,36 @@ exports[`Claim List Page tests > should match snapshot 1`] = `
             </thead>
             <tbody />
           </table>
-          <div
-            class="d-flex align-items-center gap-2"
+          <nav
+            aria-label="Table pagination"
           >
-            <button
-              class="btn btn-outline-secondary btn-sm"
-              disabled=""
+            <div
+              class="d-flex align-items-center gap-2"
             >
-              Previous
-            </button>
-            <span>
-              Page 1 of 0
-            </span>
-            <button
-              class="btn btn-outline-secondary btn-sm"
-              disabled=""
-            >
-              Next
-            </button>
-          </div>
+              <button
+                aria-label="Previous page"
+                class="btn btn-outline-secondary btn-sm"
+                disabled=""
+              >
+                Previous
+              </button>
+              <span
+                aria-live="polite"
+              >
+                Page 1 of 0
+              </span>
+              <button
+                aria-label="Next page"
+                class="btn btn-outline-secondary btn-sm"
+                disabled=""
+              >
+                Next
+              </button>
+            </div>
+          </nav>
         </div>
       </section>
-    </section>
+    </main>
   </div>
 </DocumentFragment>
 `;
