@@ -21,7 +21,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/api/v1/claims', (_req, res) => {
-  res.json(readClaims());
+  res.json(readClaims().slice(0, 25));
 });
 
 app.post('/api/v1/claims', (req, res) => {

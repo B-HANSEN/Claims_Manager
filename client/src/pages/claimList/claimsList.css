@@ -1,6 +1,6 @@
 .ClaimList__MainSection {
 	position: absolute;
-	top: 100px;
+	top: 130px;
 }
 
 .ClaimList__Filter {
@@ -14,7 +14,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: auto 16px;
-	overflow-x: hidden;
+	padding: 0 24px;
+	box-sizing: border-box;
 	width: 100%;
 }

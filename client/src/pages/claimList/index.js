@@ -42,7 +42,7 @@ const ClaimList = () => {
 					<Search setValue={setSearchQuery} />
 					<StatusFilter filter={statusFilter} setFilter={setStatusFilter} />
 				</section>
-				<Button className="mb-2" href="/?admin=true" size="lg" variant="outline-success">
+				<Button className="mb-2" href="/admin" size="lg" variant="outline-success">
 					Admin Section
 				</Button>{' '}
 				<Button className="mb-2" href="/create-claim" size="lg" variant="outline-success">

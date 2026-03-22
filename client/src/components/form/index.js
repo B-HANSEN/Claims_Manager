@@ -41,7 +41,7 @@ const ClaimsForm = () => {
 		} catch (err) {
 			throw err.message;
 		} finally {
-			navigate('/claims');
+			navigate('/');
 		}
 	};
 
@@ -147,7 +147,7 @@ const ClaimsForm = () => {
 						/>
 					</Col>
 				</Form.Group>
-				<Button className="mb-2" href="/claims" size="lg" variant="outline-success">
+				<Button className='mb-2' href='/' size='lg' variant='outline-success'>
 					Show claim list
 				</Button>{' '}
 				<Button className="mb-2" size="lg" type="submit" variant="success">

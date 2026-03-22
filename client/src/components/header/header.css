@@ -1,3 +1,10 @@
+.Header h1 {
+	font-family: 'Asap', sans-serif;
+	font-size: 3rem;
+	margin: 0;
+	text-transform: uppercase;
+}
+
 .Header {
 	align-items: center;
 	background-color: lightgrey;

@@ -1,21 +1,18 @@
-import Modal from '../../components/modal';
 import { Link } from 'react-router-dom';
-import { useSearchParams } from 'react-router-dom';
+import Header from '../../components/header';
 import './admin.css';
 
-const AdminModal = () => {
-	const [searchParams] = useSearchParams();
-
+const Admin = () => {
 	return (
-		searchParams.get('admin') && (
-			<Modal ariaLabel="Admin welcome">
-				<div className="Modal">
-					Welcome message to the Admin user
-					<Link to={{ pathname: '/claims' }}>Claims List</Link>
-				</div>
-			</Modal>
-		)
+		<div className="Admin">
+			<Header />
+			<main id="main-content" className="Admin__MainSection">
+				<h1>Admin Section</h1>
+				<p>Welcome message to the Admin user</p>
+				<Link to="/">Claims List</Link>
+			</main>
+		</div>
 	);
 };
 
-export default AdminModal;
+export default Admin;
