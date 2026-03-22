@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import ShallowRenderer from 'react-test-renderer/shallow';
-import React from 'react';
+
 import ClaimsTable from '.';
 
 const claims = [
@@ -36,9 +35,8 @@ const claims = [
 
 describe('Claim List Page tests', () => {
 	it('should match snapshot', () => {
-		const renderer = new ShallowRenderer();
-		const result = renderer.render(<ClaimsTable />);
-		expect(result).toMatchSnapshot();
+		const { asFragment } = render(<ClaimsTable filteredClaims={claims} />);
+		expect(asFragment()).toMatchSnapshot();
 	});
 
 	it('should contain table headers', () => {

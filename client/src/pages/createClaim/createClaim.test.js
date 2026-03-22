@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import ShallowRenderer from 'react-test-renderer/shallow';
-import React from 'react';
+
 import CreateClaim from '.';
 
 const mockedUsedNavigate = vi.hoisted(() => vi.fn());
@@ -18,9 +17,8 @@ beforeEach(() => {
 
 describe('Create Claim Page tests', () => {
 	it('should match snapshot', () => {
-		const renderer = new ShallowRenderer();
-		const result = renderer.render(<CreateClaim />);
-		expect(result).toMatchSnapshot();
+		const { asFragment } = render(<CreateClaim />);
+		expect(asFragment()).toMatchSnapshot();
 	});
 
 	it('should contain form labels', () => {

@@ -1,149 +1,158 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Claim List Page tests > should match snapshot 1`] = `
-<div>
-  <table
-    className="table table-striped table-hover table-sm"
-  >
-    <thead>
-      <tr>
-        <th
-          onClick={[Function]}
-          style={
-            {
-              "cursor": "default",
-            }
-          }
-        >
-          Claim ID
-        </th>
-        <th
-          onClick={[Function]}
-          style={
-            {
-              "cursor": "default",
-            }
-          }
-        >
-          Status
-        </th>
-        <th
-          onClick={[Function]}
-          style={
-            {
-              "cursor": "pointer",
-            }
-          }
-        >
-          Amount
-        </th>
-        <th
-          onClick={[Function]}
-          style={
-            {
-              "cursor": "default",
-            }
-          }
-        >
-          Holder
-        </th>
-        <th
-          onClick={[Function]}
-          style={
-            {
-              "cursor": "default",
-            }
-          }
-        >
-          Policy number
-        </th>
-        <th
-          onClick={[Function]}
-          style={
-            {
-              "cursor": "default",
-            }
-          }
-        >
-          Insured item
-        </th>
-        <th
-          onClick={[Function]}
-          style={
-            {
-              "cursor": "default",
-            }
-          }
-        >
-          Description
-        </th>
-        <th
-          onClick={[Function]}
-          style={
-            {
-              "cursor": "default",
-            }
-          }
-        >
-          Incident date
-        </th>
-        <th
-          onClick={[Function]}
-          style={
-            {
-              "cursor": "pointer",
-            }
-          }
-        >
-          Processing fee
-        </th>
-        <th
-          onClick={[Function]}
-          style={
-            {
-              "cursor": "pointer",
-            }
-          }
-        >
-          Total amount
-        </th>
-        <th
-          onClick={[Function]}
-          style={
-            {
-              "cursor": "pointer",
-            }
-          }
-        >
-          Created at
-        </th>
-      </tr>
-    </thead>
-    <tbody />
-  </table>
-  <div
-    className="d-flex align-items-center gap-2"
-  >
-    <button
-      className="btn btn-outline-secondary btn-sm"
-      disabled={true}
-      onClick={[Function]}
+<DocumentFragment>
+  <div>
+    <table
+      class="table table-striped table-hover table-sm"
     >
-      Previous
-    </button>
-    <span>
-      Page 
-      1
-       of 
-      0
-    </span>
-    <button
-      className="btn btn-outline-secondary btn-sm"
-      disabled={true}
-      onClick={[Function]}
+      <thead>
+        <tr>
+          <th
+            style="cursor: default;"
+          >
+            Claim ID
+          </th>
+          <th
+            style="cursor: default;"
+          >
+            Status
+          </th>
+          <th
+            style="cursor: pointer;"
+          >
+            Amount
+          </th>
+          <th
+            style="cursor: default;"
+          >
+            Holder
+          </th>
+          <th
+            style="cursor: default;"
+          >
+            Policy number
+          </th>
+          <th
+            style="cursor: default;"
+          >
+            Insured item
+          </th>
+          <th
+            style="cursor: default;"
+          >
+            Description
+          </th>
+          <th
+            style="cursor: default;"
+          >
+            Incident date
+          </th>
+          <th
+            style="cursor: pointer;"
+          >
+            Processing fee
+          </th>
+          <th
+            style="cursor: pointer;"
+          >
+            Total amount
+          </th>
+          <th
+            style="cursor: pointer;"
+          >
+            Created at
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            CL-52026
+          </td>
+          <td>
+            Submitted
+          </td>
+          <td>
+            1641.00
+          </td>
+          <td>
+            Loren Harber DVM
+          </td>
+          <td>
+            TL-25580
+          </td>
+          <td>
+            Small Cotton Fish
+          </td>
+          <td>
+            Optio voluptatem in voluptas minus consequatur doloribus nemo voluptas vero est ipsam aut dolores nesciunt.
+          </td>
+          <td>
+            2022-05-25
+          </td>
+          <td>
+            86.00
+          </td>
+          <td />
+          <td>
+            2022-06-12
+          </td>
+        </tr>
+        <tr>
+          <td>
+            CL-25395
+          </td>
+          <td>
+            Approved
+          </td>
+          <td>
+            673.00
+          </td>
+          <td>
+            Loren Harber DVM
+          </td>
+          <td>
+            TL-25580
+          </td>
+          <td>
+            Handcrafted Metal Cheese
+          </td>
+          <td>
+            Qui alias dignissimos molestiae modi doloribus provident aut in laudantium repudiandae minus laborum modi molestias.
+          </td>
+          <td>
+            2022-01-31
+          </td>
+          <td>
+            121.00
+          </td>
+          <td />
+          <td>
+            2022-03-13
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class="d-flex align-items-center gap-2"
     >
-      Next
-    </button>
+      <button
+        class="btn btn-outline-secondary btn-sm"
+        disabled=""
+      >
+        Previous
+      </button>
+      <span>
+        Page 1 of 1
+      </span>
+      <button
+        class="btn btn-outline-secondary btn-sm"
+        disabled=""
+      >
+        Next
+      </button>
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;

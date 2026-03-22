@@ -1,7 +1,6 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
-import ShallowRenderer from 'react-test-renderer/shallow';
 import '@testing-library/jest-dom';
+
 import ClaimList from '.';
 
 beforeEach(() => {
@@ -10,9 +9,8 @@ beforeEach(() => {
 
 describe('Claim List Page tests', () => {
 	it('should match snapshot', () => {
-		const renderer = new ShallowRenderer();
-		const result = renderer.render(<ClaimList />);
-		expect(result).toMatchSnapshot();
+		const { asFragment } = render(<ClaimList />);
+		expect(asFragment()).toMatchSnapshot();
 	});
 
 	it('should contain heading, label and button texts', () => {

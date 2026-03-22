@@ -1,7 +1,7 @@
-const { generateId, formatDate } = require('../helper');
-const { claimPayloadSchema } = require('../schemas');
+import { generateId, formatDate } from '../helper.js';
+import { claimPayloadSchema } from '../schemas.js';
 
-module.exports = (req, res, next) => {
+export default (req, res, next) => {
 	if (req.method === 'POST' && req.url === '/claims') {
 		try {
 			// validate payload

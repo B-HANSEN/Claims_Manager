@@ -1,50 +1,50 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Status filter tests > should match snapshot 1`] = `
-<div
-  className="StatusFilter"
->
-  <p>
-    Filter by claim status
-  </p>
-  <FormSelect
-    aria-label="Default select example"
-    className="StatusFilter__Select"
-    data-testid="select"
-    id="status"
-    onChange={[Function]}
-    size="lg"
+<DocumentFragment>
+  <div
+    class="StatusFilter"
   >
-    <option
-      value="ShowAll"
+    <p>
+      Filter by claim status
+    </p>
+    <select
+      aria-label="Default select example"
+      class="StatusFilter__Select form-select form-select-lg"
+      data-testid="select"
+      id="status"
     >
-      Show All
-    </option>
-    <option
-      value="Submitted"
-    >
-      Submitted
-    </option>
-    <option
-      value="Approved"
-    >
-      Approved
-    </option>
-    <option
-      value="Processed"
-    >
-      Processed
-    </option>
-    <option
-      value="Completed"
-    >
-      Completed
-    </option>
-    <option
-      value="Rejected"
-    >
-      Rejected
-    </option>
-  </FormSelect>
-</div>
+      <option
+        value="ShowAll"
+      >
+        Show All
+      </option>
+      <option
+        value="Submitted"
+      >
+        Submitted
+      </option>
+      <option
+        value="Approved"
+      >
+        Approved
+      </option>
+      <option
+        value="Processed"
+      >
+        Processed
+      </option>
+      <option
+        value="Completed"
+      >
+        Completed
+      </option>
+      <option
+        value="Rejected"
+      >
+        Rejected
+      </option>
+    </select>
+  </div>
+</DocumentFragment>
 `;

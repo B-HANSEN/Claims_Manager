@@ -1,45 +1,41 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Search Page tests > should match snapshot 1`] = `
-<Form
-  onSubmit={[Function]}
->
-  <FormGroup
-    className="mb-3"
+<DocumentFragment>
+  <form
+    class=""
   >
-    <FormLabel>
-      Search by ID, holder name or policy
-    </FormLabel>
-    <FormControl
-      data-testid="search"
-      id="search"
-      name="search"
-      onChange={[Function]}
-      onFocus={[Function]}
-      placeholder="Enter query here..."
-      size="lg"
-      type="text"
-      value=""
-    />
-  </FormGroup>
-  <Button
-    className="mb-2"
-    onClick={[Function]}
-    size="lg"
-    type="submit"
-    variant="primary"
-  >
-    Submit
-  </Button>
-   
-  <Button
-    className="mb-2"
-    onClick={[Function]}
-    size="lg"
-    type="submit"
-    variant="outline-secondary"
-  >
-    Reset
-  </Button>
-</Form>
+    <div
+      class="mb-3"
+    >
+      <label
+        class="form-label"
+      >
+        Search by ID, holder name or policy
+      </label>
+      <input
+        class="form-control form-control-lg"
+        data-testid="search"
+        id="search"
+        name="search"
+        placeholder="Enter query here..."
+        type="text"
+        value=""
+      />
+    </div>
+    <button
+      class="mb-2 btn btn-primary btn-lg"
+      type="submit"
+    >
+      Submit
+    </button>
+     
+    <button
+      class="mb-2 btn btn-outline-secondary btn-lg"
+      type="submit"
+    >
+      Reset
+    </button>
+  </form>
+</DocumentFragment>
 `;

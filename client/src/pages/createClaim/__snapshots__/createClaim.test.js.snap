@@ -1,17 +1,202 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Create Claim Page tests > should match snapshot 1`] = `
-<div
-  className="CreateClaim"
->
-  <Header />
-  <section
-    className="CreateClaim__MainSection"
+<DocumentFragment>
+  <div
+    class="CreateClaim"
   >
-    <h1>
-      Create Claim
-    </h1>
-    <ClaimsForm />
-  </section>
-</div>
+    <div
+      class="Header"
+    >
+      <h5>
+        Header component
+      </h5>
+    </div>
+    <section
+      class="CreateClaim__MainSection"
+    >
+      <h1>
+        Create Claim
+      </h1>
+      <section
+        class="Form"
+      >
+        <form
+          class=""
+        >
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="ControlInput"
+            >
+              Policy number:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="ControlInput"
+                placeholder=""
+                required=""
+                type="string"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="ControlInput"
+            >
+              Holder name:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="ControlInput"
+                placeholder=""
+                required=""
+                type="string"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="ControlInput"
+            >
+              Insured item:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="ControlInput"
+                placeholder=""
+                required=""
+                type="string"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="ControlInput"
+            >
+              Claim amount:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="ControlInput"
+                placeholder=""
+                required=""
+                type="number"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="ControlInput"
+            >
+              Description:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="ControlInput"
+                placeholder=""
+                required=""
+                type="string"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="ControlInput"
+            >
+              Incident Date:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="ControlInput"
+                placeholder="YYYY-MM-DD"
+                required=""
+                type="string"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="ControlInput"
+            >
+              Processing Fee:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="ControlInput"
+                placeholder=""
+                required=""
+                type="string"
+                value=""
+              />
+            </div>
+          </div>
+          <a
+            class="mb-2 btn btn-outline-success btn-lg"
+            href="/claims"
+            role="button"
+            tabindex="0"
+          >
+            Show claim list
+          </a>
+           
+          <button
+            class="mb-2 btn btn-success btn-lg"
+            type="submit"
+            value="Submit"
+          >
+            Add new claim
+          </button>
+        </form>
+      </section>
+    </section>
+  </div>
+</DocumentFragment>
 `;
