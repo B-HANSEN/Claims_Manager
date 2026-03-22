@@ -7,12 +7,12 @@ import Search from '.';
 describe('Search Page tests', () => {
 	it('should match snapshot', () => {
 		const renderer = new ShallowRenderer();
-		const result = renderer.render(<Search setValue={jest.fn()} />);
+		const result = renderer.render(<Search setValue={vi.fn()} />);
 		expect(result).toMatchSnapshot();
 	});
 
 	it('should change input value when user types and set local state', () => {
-		const handleValue = jest.fn();
+		const handleValue = vi.fn();
 		render(<Search setValue={handleValue} />);
 
 		const input = screen.getByTestId('search');

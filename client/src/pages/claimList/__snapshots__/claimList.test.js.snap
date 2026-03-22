@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Claim List Page tests should match snapshot 1`] = `
+exports[`Claim List Page tests > should match snapshot 1`] = `
 <div
   className="ClaimList"
 >
@@ -43,7 +43,7 @@ exports[`Claim List Page tests should match snapshot 1`] = `
       className="ClaimList__Table"
     >
       <ClaimsTable
-        filteredClaims={Array []}
+        filteredClaims={[]}
       />
     </section>
   </section>

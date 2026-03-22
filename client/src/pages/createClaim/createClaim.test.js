@@ -3,11 +3,14 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 import React from 'react';
 import CreateClaim from '.';
 
-const mockedUsedNavigate = jest.fn();
-jest.mock('react-router-dom', () => ({
-	...jest.requireActual('react-router-dom'),
-	useNavigate: () => mockedUsedNavigate,
-}));
+const mockedUsedNavigate = vi.hoisted(() => vi.fn());
+vi.mock('react-router-dom', async () => {
+	const actual = await vi.importActual('react-router-dom');
+	return {
+		...actual,
+		useNavigate: () => mockedUsedNavigate,
+	};
+});
 
 beforeEach(() => {
 	render(<CreateClaim />);

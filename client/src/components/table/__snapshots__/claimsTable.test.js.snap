@@ -1,71 +1,149 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Claim List Page tests should match snapshot 1`] = `
-<BootstrapTableContainer
-  bootstrap4={true}
-  columns={
-    Array [
-      Object {
-        "dataField": "number",
-        "text": "Claim ID",
-      },
-      Object {
-        "dataField": "status",
-        "text": "Status",
-      },
-      Object {
-        "dataField": "amount",
-        "sort": true,
-        "text": "Amount",
-      },
-      Object {
-        "dataField": "holder",
-        "text": "Holder",
-      },
-      Object {
-        "dataField": "policyNumber",
-        "text": "Policy number",
-      },
-      Object {
-        "dataField": "insuredItem",
-        "text": "Insured item",
-      },
-      Object {
-        "dataField": "description",
-        "text": "Description",
-      },
-      Object {
-        "dataField": "incidentDate",
-        "text": "Incident date",
-      },
-      Object {
-        "dataField": "processingFee",
-        "sort": true,
-        "text": "Processing fee",
-      },
-      Object {
-        "dataField": "totalFee",
-        "sort": true,
-        "text": "Total amount",
-      },
-      Object {
-        "dataField": "createdAt",
-        "sort": true,
-        "text": "Created at",
-      },
-    ]
-  }
-  condensed={true}
-  hover={true}
-  keyField="id"
-  pagination={
-    Object {
-      "createContext": [Function],
-      "options": Object {
-        "sizePerPage": 10,
-      },
-    }
-  }
-  striped={true}
-/>
+exports[`Claim List Page tests > should match snapshot 1`] = `
+<div>
+  <table
+    className="table table-striped table-hover table-sm"
+  >
+    <thead>
+      <tr>
+        <th
+          onClick={[Function]}
+          style={
+            {
+              "cursor": "default",
+            }
+          }
+        >
+          Claim ID
+        </th>
+        <th
+          onClick={[Function]}
+          style={
+            {
+              "cursor": "default",
+            }
+          }
+        >
+          Status
+        </th>
+        <th
+          onClick={[Function]}
+          style={
+            {
+              "cursor": "pointer",
+            }
+          }
+        >
+          Amount
+        </th>
+        <th
+          onClick={[Function]}
+          style={
+            {
+              "cursor": "default",
+            }
+          }
+        >
+          Holder
+        </th>
+        <th
+          onClick={[Function]}
+          style={
+            {
+              "cursor": "default",
+            }
+          }
+        >
+          Policy number
+        </th>
+        <th
+          onClick={[Function]}
+          style={
+            {
+              "cursor": "default",
+            }
+          }
+        >
+          Insured item
+        </th>
+        <th
+          onClick={[Function]}
+          style={
+            {
+              "cursor": "default",
+            }
+          }
+        >
+          Description
+        </th>
+        <th
+          onClick={[Function]}
+          style={
+            {
+              "cursor": "default",
+            }
+          }
+        >
+          Incident date
+        </th>
+        <th
+          onClick={[Function]}
+          style={
+            {
+              "cursor": "pointer",
+            }
+          }
+        >
+          Processing fee
+        </th>
+        <th
+          onClick={[Function]}
+          style={
+            {
+              "cursor": "pointer",
+            }
+          }
+        >
+          Total amount
+        </th>
+        <th
+          onClick={[Function]}
+          style={
+            {
+              "cursor": "pointer",
+            }
+          }
+        >
+          Created at
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+  <div
+    className="d-flex align-items-center gap-2"
+  >
+    <button
+      className="btn btn-outline-secondary btn-sm"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Previous
+    </button>
+    <span>
+      Page 
+      1
+       of 
+      0
+    </span>
+    <button
+      className="btn btn-outline-secondary btn-sm"
+      disabled={true}
+      onClick={[Function]}
+    >
+      Next
+    </button>
+  </div>
+</div>
 `;

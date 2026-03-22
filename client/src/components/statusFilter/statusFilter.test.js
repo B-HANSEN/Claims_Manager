@@ -11,7 +11,7 @@ describe('Status filter tests', () => {
 	});
 
 	it('should update local state with new filter value', () => {
-		const handleFilter = jest.fn();
+		const handleFilter = vi.fn();
 
 		render(<StatusFilter filter={'ShowAll'} setFilter={handleFilter} />);
 		expect(screen.getByText('Processed')).toBeInTheDocument();

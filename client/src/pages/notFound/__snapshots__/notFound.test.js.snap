@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Not Found Page tests should match snapshot 1`] = `
+exports[`Not Found Page tests > should match snapshot 1`] = `
 <div
   className="d-flex align-items-center justify-content-center vh-100"
 >

@@ -9,3 +9,9 @@ we need ESM modules
 responsive design or at least desktop display   
 
 unit testing
+
+better project name
+
+add linter and prettier
+
+ensure WCAG compatibility, AA standard
