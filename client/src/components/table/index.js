@@ -66,7 +66,7 @@ const getAriaSort = (column) => {
 const ClaimsTable = ({ filteredClaims }) => {
 	'use no memo';
 	const [sorting, setSorting] = useState([]);
-	const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 15 });
+	const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 });
 	const [columnVisibility, setColumnVisibility] = useState({});
 
 	const containerRef = useRef(null);
