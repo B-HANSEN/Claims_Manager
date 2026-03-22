@@ -1,5 +1,5 @@
 export const getClaimsList = async () => {
-	const claimsUrl = 'http://localhost:8001/api/v1/claims';
+	const claimsUrl = '/api/v1/claims';
 
 	try {
 		let response = await fetch(claimsUrl);
