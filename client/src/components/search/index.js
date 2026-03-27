@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 
 const Search = ({ setValue }) => {
 	const [query, setQuery] = useState('');
+	const [focused, setFocused] = useState(false);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -12,31 +13,41 @@ const Search = ({ setValue }) => {
 
 	const reset = () => {
 		setQuery('');
-		setValue(query);
+		setValue('');
 	};
 
 	return (
 		<Form onSubmit={(e) => handleSubmit(e)}>
-			<Form.Group className="mb-3">
-				<Form.Label>Search by ID, holder name or policy</Form.Label>
+			<Form.Label>Search by ID, holder name or policy</Form.Label>
+			<div className='d-flex align-items-center gap-2'>
 				<Form.Control
-					id="search"
-					data-testid="search"
-					name="search"
-					onChange={(e) => setQuery(e.target.value)}
-					onFocus={() => setQuery('')}
-					placeholder="Enter query here..."
-					size="lg"
-					type="text"
+					id='search'
+					data-testid='search'
+					name='search'
+					onChange={(e) => {
+						setQuery(e.target.value);
+						setValue(e.target.value);
+					}}
+					onFocus={() => {
+						setQuery('');
+						setFocused(true);
+					}}
+					onBlur={() => setFocused(false)}
+					placeholder='Enter query here...'
+					size='lg'
+					type='text'
 					value={query}
 				/>
-			</Form.Group>
-			<Button className="mb-2" onClick={handleSubmit} size="lg" type="submit" variant="primary">
-				Submit
-			</Button>{' '}
-			<Button className="mb-2" onClick={reset} size="lg" type="button" variant="outline-secondary">
-				Reset
-			</Button>
+
+				<Button
+					onClick={reset}
+					size='sm'
+					type='button'
+					variant={focused ? 'primary' : 'outline-secondary'}
+				>
+					Reset
+				</Button>
+			</div>
 		</Form>
 	);
 };

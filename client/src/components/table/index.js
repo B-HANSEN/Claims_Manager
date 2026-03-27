@@ -131,37 +131,37 @@ const ClaimsTable = ({ filteredClaims }) => {
 
 	return (
 		<div ref={containerRef}>
-			<nav aria-label="Table pagination" style={{ margin: '16px 0' }}>
+			<nav aria-label='Table pagination' style={{ margin: '16px 0' }}>
 				<div
-					className="d-flex align-items-center justify-content-center gap-2"
+					className='d-flex align-items-center justify-content-center gap-2'
 					style={{ marginBottom: '32px' }}
 				>
 					<button
-						className="btn btn-outline-secondary btn-sm pagination-btn"
+						className={`btn btn-sm pagination-btn ${table.getCanPreviousPage() ? 'btn-primary' : 'btn-outline-secondary'}`}
 						onClick={() => table.previousPage()}
 						disabled={!table.getCanPreviousPage()}
-						aria-label="Previous page"
+						aria-label='Previous page'
 					>
 						Previous
 					</button>
-					<span aria-live="polite">
+					<span aria-live='polite'>
 						Page {table.getState().pagination.pageIndex + 1} of {table.getPageCount()}
 					</span>
 					<button
-						className="btn btn-outline-secondary btn-sm pagination-btn"
+						className={`btn btn-sm pagination-btn ${table.getCanNextPage() ? 'btn-primary' : 'btn-outline-secondary'}`}
 						onClick={() => table.nextPage()}
 						disabled={!table.getCanNextPage()}
-						aria-label="Next page"
+						aria-label='Next page'
 					>
 						Next
 					</button>
 				</div>
 			</nav>
 			<table
-				className="table table-striped table-hover table-sm table-bordered border-dark"
+				className='table table-striped table-hover table-sm table-bordered border-dark'
 				style={{ width: '100%' }}
 			>
-				<caption className="visually-hidden">Claims overview</caption>
+				<caption className='visually-hidden'>Claims overview</caption>
 				<thead>
 					{table.getHeaderGroups().map((headerGroup) => (
 						<tr key={headerGroup.id}>
@@ -173,7 +173,7 @@ const ClaimsTable = ({ filteredClaims }) => {
 									<th
 										key={header.id}
 										ref={isDescription ? descThRef : undefined}
-										scope="col"
+										scope='col'
 										aria-sort={getAriaSort(header.column)}
 										tabIndex={canSort ? 0 : undefined}
 										onClick={header.column.getToggleSortingHandler()}

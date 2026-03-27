@@ -4,12 +4,12 @@ import './admin.css';
 
 const Admin = () => {
 	return (
-		<div className="Admin">
+		<div className='Admin'>
 			<Header />
-			<main id="main-content" className="Admin__MainSection">
+			<main id='main-content' className='Admin__MainSection'>
 				<h1>Admin Section</h1>
 				<p>Welcome message to the Admin user</p>
-				<Link to="/">Claims List</Link>
+				<Link to='/'>Claims List</Link>
 			</main>
 		</div>
 	);

@@ -4,9 +4,9 @@ import './createClaim.css';
 
 const CreateClaim = () => {
 	return (
-		<div className="CreateClaim">
+		<div className='CreateClaim'>
 			<Header />
-			<main id="main-content" className="CreateClaim__MainSection">
+			<main id='main-content' className='CreateClaim__MainSection'>
 				<h1>Create Claim</h1>
 				<ClaimsForm />
 			</main>

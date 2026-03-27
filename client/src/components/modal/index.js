@@ -11,9 +11,9 @@ const Modal = ({ children, ariaLabel = 'Dialog' }) => {
 
 	return createPortal(
 		<div
-			className="ModalContents"
-			role="dialog"
-			aria-modal="true"
+			className='ModalContents'
+			role='dialog'
+			aria-modal='true'
 			aria-label={ariaLabel}
 			tabIndex={-1}
 			ref={ref}
