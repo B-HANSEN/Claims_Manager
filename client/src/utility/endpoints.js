@@ -1,11 +1,11 @@
 export const getClaimsList = async () => {
-	const claimsUrl = '/api/v1/claims';
+	const claimsUrl = '/api/v1/claims'
 
 	try {
-		let response = await fetch(claimsUrl);
-		let data = await response.json();
+		let response = await fetch(claimsUrl)
+		let data = await response.json()
 
-		let allClaims = [];
+		let allClaims = []
 
 		data.map((item) => {
 			const mappedData = {
@@ -21,11 +21,11 @@ export const getClaimsList = async () => {
 				processingFee: Number(item.processingFee),
 				status: item.status,
 				totalFee: Number(item.amount) + Number(item.processingFee),
-			};
-			return allClaims.push(mappedData);
-		});
-		return allClaims;
+			}
+			return allClaims.push(mappedData)
+		})
+		return allClaims
 	} catch (err) {
-		throw err.message;
+		throw err.message
 	}
-};
+}

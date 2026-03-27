@@ -1,14 +1,14 @@
-import { useState, useEffect, useRef } from 'react';
-import './table.css';
+import { useState, useEffect, useRef } from 'react'
+import './table.css'
 import {
 	useReactTable,
 	getCoreRowModel,
 	getSortedRowModel,
 	getPaginationRowModel,
 	flexRender,
-} from '@tanstack/react-table';
+} from '@tanstack/react-table'
 
-const shrink = { whiteSpace: 'nowrap' };
+const shrink = { whiteSpace: 'nowrap' }
 
 const columns = [
 	{
@@ -16,9 +16,9 @@ const columns = [
 		header: '#',
 		enableSorting: false,
 		cell: ({ row, table }) => {
-			const { pageIndex, pageSize } = table.getState().pagination;
-			const positionInPage = table.getRowModel().rows.indexOf(row);
-			return pageIndex * pageSize + positionInPage + 1;
+			const { pageIndex, pageSize } = table.getState().pagination
+			const positionInPage = table.getRowModel().rows.indexOf(row)
+			return pageIndex * pageSize + positionInPage + 1
 		},
 		meta: { style: shrink },
 	},
@@ -62,60 +62,60 @@ const columns = [
 	{ accessorKey: 'processingFee', header: 'Processing fee', meta: { style: shrink } },
 	{ accessorKey: 'totalFee', header: 'Total amount', meta: { style: shrink } },
 	{ accessorKey: 'createdAt', header: 'Created at', meta: { style: shrink } },
-];
+]
 
 const getAriaSort = (column) => {
-	const sorted = column.getIsSorted();
-	if (!column.getCanSort()) return undefined;
-	if (sorted === 'asc') return 'ascending';
-	if (sorted === 'desc') return 'descending';
-	return 'none';
-};
+	const sorted = column.getIsSorted()
+	if (!column.getCanSort()) return undefined
+	if (sorted === 'asc') return 'ascending'
+	if (sorted === 'desc') return 'descending'
+	return 'none'
+}
 
 const ClaimsTable = ({ filteredClaims }) => {
-	'use no memo';
-	const [sorting, setSorting] = useState([]);
-	const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 });
-	const [columnVisibility, setColumnVisibility] = useState({});
+	'use no memo'
+	const [sorting, setSorting] = useState([])
+	const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 10 })
+	const [columnVisibility, setColumnVisibility] = useState({})
 
-	const containerRef = useRef(null);
-	const descThRef = useRef(null);
-	const hideInfoRef = useRef(null); // { showThreshold } when description is hidden
+	const containerRef = useRef(null)
+	const descThRef = useRef(null)
+	const hideInfoRef = useRef(null) // { showThreshold } when description is hidden
 
-	const checkDescriptionVisibility = useRef(null);
+	const checkDescriptionVisibility = useRef(null)
 
 	useEffect(() => {
-		const container = containerRef.current;
-		if (!container) return;
+		const container = containerRef.current
+		if (!container) return
 
 		const check = () => {
-			const containerWidth = container.offsetWidth;
+			const containerWidth = container.offsetWidth
 			if (!hideInfoRef.current) {
-				const descTh = descThRef.current;
+				const descTh = descThRef.current
 				if (descTh && descTh.offsetWidth < 125) {
 					hideInfoRef.current = {
 						showThreshold: containerWidth + (125 - descTh.offsetWidth) + 1,
-					};
-					setColumnVisibility({ description: false });
+					}
+					setColumnVisibility({ description: false })
 				}
 			} else {
 				if (containerWidth >= hideInfoRef.current.showThreshold) {
-					hideInfoRef.current = null;
-					setColumnVisibility({});
+					hideInfoRef.current = null
+					setColumnVisibility({})
 				}
 			}
-		};
+		}
 
-		checkDescriptionVisibility.current = check;
+		checkDescriptionVisibility.current = check
 
-		const observer = new ResizeObserver(check);
-		observer.observe(container);
-		return () => observer.disconnect();
-	}, []);
+		const observer = new ResizeObserver(check)
+		observer.observe(container)
+		return () => observer.disconnect()
+	}, [])
 
 	useEffect(() => {
-		checkDescriptionVisibility.current?.();
-	}, [filteredClaims]);
+		checkDescriptionVisibility.current?.()
+	}, [filteredClaims])
 
 	const table = useReactTable({
 		data: filteredClaims ?? [],
@@ -127,7 +127,7 @@ const ClaimsTable = ({ filteredClaims }) => {
 		getCoreRowModel: getCoreRowModel(),
 		getSortedRowModel: getSortedRowModel(),
 		getPaginationRowModel: getPaginationRowModel(),
-	});
+	})
 
 	return (
 		<div ref={containerRef}>
@@ -166,9 +166,9 @@ const ClaimsTable = ({ filteredClaims }) => {
 					{table.getHeaderGroups().map((headerGroup) => (
 						<tr key={headerGroup.id}>
 							{headerGroup.headers.map((header) => {
-								const canSort = header.column.getCanSort();
-								const sorted = header.column.getIsSorted();
-								const isDescription = header.column.id === 'description';
+								const canSort = header.column.getCanSort()
+								const sorted = header.column.getIsSorted()
+								const isDescription = header.column.id === 'description'
 								return (
 									<th
 										key={header.id}
@@ -179,8 +179,8 @@ const ClaimsTable = ({ filteredClaims }) => {
 										onClick={header.column.getToggleSortingHandler()}
 										onKeyDown={(e) => {
 											if (canSort && (e.key === 'Enter' || e.key === ' ')) {
-												e.preventDefault();
-												header.column.getToggleSortingHandler()(e);
+												e.preventDefault()
+												header.column.getToggleSortingHandler()(e)
 											}
 										}}
 										style={{
@@ -201,7 +201,7 @@ const ClaimsTable = ({ filteredClaims }) => {
 											</span>
 										)}
 									</th>
-								);
+								)
 							})}
 						</tr>
 					))}
@@ -219,7 +219,7 @@ const ClaimsTable = ({ filteredClaims }) => {
 				</tbody>
 			</table>
 		</div>
-	);
-};
+	)
+}
 
-export default ClaimsTable;
+export default ClaimsTable

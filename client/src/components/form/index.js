@@ -1,23 +1,23 @@
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import { useNavigate } from 'react-router-dom';
-import './form.css';
+import { useState } from 'react'
+import Button from 'react-bootstrap/Button'
+import Col from 'react-bootstrap/Col'
+import Form from 'react-bootstrap/Form'
+import Row from 'react-bootstrap/Row'
+import { useNavigate } from 'react-router-dom'
+import './form.css'
 
 const ClaimsForm = () => {
-	const [policyNumber, setPolicyNumber] = useState('');
-	const [holder, setHolder] = useState('');
-	const [insuredItem, setInsuredItem] = useState('');
-	const [amount, setAmount] = useState('');
-	const [description, setDescription] = useState('');
-	const [incidentDate, setIncidentDate] = useState('');
-	const [processingFee, setProcessingFee] = useState('');
-	const navigate = useNavigate();
+	const [policyNumber, setPolicyNumber] = useState('')
+	const [holder, setHolder] = useState('')
+	const [insuredItem, setInsuredItem] = useState('')
+	const [amount, setAmount] = useState('')
+	const [description, setDescription] = useState('')
+	const [incidentDate, setIncidentDate] = useState('')
+	const [processingFee, setProcessingFee] = useState('')
+	const navigate = useNavigate()
 
 	const handleSubmit = async (e) => {
-		e.preventDefault();
+		e.preventDefault()
 		const newClaim = {
 			policyNumber,
 			holder,
@@ -26,8 +26,8 @@ const ClaimsForm = () => {
 			description,
 			incidentDate,
 			processingFee,
-		};
-		const claimsUrl = 'http://localhost:8001/api/v1/claims';
+		}
+		const claimsUrl = 'http://localhost:8001/api/v1/claims'
 
 		try {
 			await fetch(claimsUrl, {
@@ -35,15 +35,15 @@ const ClaimsForm = () => {
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify(newClaim),
 			}).then((response) => {
-				console.log('success writing to server', response);
-				console.log('body', JSON.stringify(newClaim));
-			});
+				console.log('success writing to server', response)
+				console.log('body', JSON.stringify(newClaim))
+			})
 		} catch (err) {
-			throw err.message;
+			throw err.message
 		} finally {
-			navigate('/');
+			navigate('/')
 		}
-	};
+	}
 
 	return (
 		<section className='Form'>
@@ -155,7 +155,7 @@ const ClaimsForm = () => {
 				</Button>
 			</Form>
 		</section>
-	);
-};
+	)
+}
 
-export default ClaimsForm;
+export default ClaimsForm

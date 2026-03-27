@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react'
 
-import ClaimsTable from '.';
+import ClaimsTable from '.'
 
 const claims = [
 	{
@@ -31,38 +31,38 @@ const claims = [
 		processingFee: '121.00',
 		status: 'Approved',
 	},
-];
+]
 
 describe('Claim List Page tests', () => {
 	it('should match snapshot', () => {
-		const { asFragment } = render(<ClaimsTable filteredClaims={claims} />);
-		expect(asFragment()).toMatchSnapshot();
-	});
+		const { asFragment } = render(<ClaimsTable filteredClaims={claims} />)
+		expect(asFragment()).toMatchSnapshot()
+	})
 
 	it('should contain table headers', () => {
-		render(<ClaimsTable filteredClaims={claims} />);
-		const id = screen.getByText(/claim id/i);
-		const status = screen.getByText(/status/i);
-		const amount = screen.getByText(/Amount/);
-		const holder = screen.getByText(/Holder/);
-		const policy = screen.getByText(/policy number/i);
-		const item = screen.getByText(/insured item/i);
-		const description = screen.getByText(/description/i);
-		const incidentDate = screen.getByText(/incident date/i);
-		const processingFee = screen.getByText(/processing fee/i);
-		const totalAmount = screen.getByText(/total amount/i);
-		const createdAt = screen.getByText(/created at/i);
+		render(<ClaimsTable filteredClaims={claims} />)
+		const id = screen.getByText(/claim id/i)
+		const status = screen.getByText(/status/i)
+		const amount = screen.getByText(/Amount/)
+		const holder = screen.getByText(/Holder/)
+		const policy = screen.getByText(/policy number/i)
+		const item = screen.getByText(/insured item/i)
+		const description = screen.getByText(/description/i)
+		const incidentDate = screen.getByText(/incident date/i)
+		const processingFee = screen.getByText(/processing fee/i)
+		const totalAmount = screen.getByText(/total amount/i)
+		const createdAt = screen.getByText(/created at/i)
 
-		expect(id).toBeInTheDocument();
-		expect(status).toBeInTheDocument();
-		expect(amount).toBeInTheDocument();
-		expect(holder).toBeInTheDocument();
-		expect(policy).toBeInTheDocument();
-		expect(item).toBeInTheDocument();
-		expect(description).toBeInTheDocument();
-		expect(incidentDate).toBeInTheDocument();
-		expect(processingFee).toBeInTheDocument();
-		expect(totalAmount).toBeInTheDocument();
-		expect(createdAt).toBeInTheDocument();
-	});
-});
+		expect(id).toBeInTheDocument()
+		expect(status).toBeInTheDocument()
+		expect(amount).toBeInTheDocument()
+		expect(holder).toBeInTheDocument()
+		expect(policy).toBeInTheDocument()
+		expect(item).toBeInTheDocument()
+		expect(description).toBeInTheDocument()
+		expect(incidentDate).toBeInTheDocument()
+		expect(processingFee).toBeInTheDocument()
+		expect(totalAmount).toBeInTheDocument()
+		expect(createdAt).toBeInTheDocument()
+	})
+})

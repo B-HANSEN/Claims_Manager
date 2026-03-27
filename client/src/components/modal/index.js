@@ -1,13 +1,13 @@
-import { useEffect, useRef } from 'react';
-import { createPortal } from 'react-dom';
-import './modal.css';
+import { useEffect, useRef } from 'react'
+import { createPortal } from 'react-dom'
+import './modal.css'
 
 const Modal = ({ children, ariaLabel = 'Dialog' }) => {
-	const ref = useRef(null);
+	const ref = useRef(null)
 
 	useEffect(() => {
-		ref.current?.focus();
-	}, []);
+		ref.current?.focus()
+	}, [])
 
 	return createPortal(
 		<div
@@ -21,7 +21,7 @@ const Modal = ({ children, ariaLabel = 'Dialog' }) => {
 			{children}
 		</div>,
 		document.getElementById('modal_root')
-	);
-};
+	)
+}
 
-export default Modal;
+export default Modal

@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import Header from '../../components/header';
-import './admin.css';
+import { Link } from 'react-router-dom'
+import Header from '../../components/header'
+import './admin.css'
 
 const Admin = () => {
 	return (
@@ -12,7 +12,7 @@ const Admin = () => {
 				<Link to='/'>Claims List</Link>
 			</main>
 		</div>
-	);
-};
+	)
+}
 
-export default Admin;
+export default Admin

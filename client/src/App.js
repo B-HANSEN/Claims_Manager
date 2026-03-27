@@ -1,9 +1,9 @@
-import { Routes, Route } from 'react-router-dom';
-import Admin from './pages/admin';
-import ClaimList from './pages/claimList';
-import CreateClaim from './pages/createClaim';
-import NotFound from './pages/notFound';
-import './App.css';
+import { Routes, Route } from 'react-router-dom'
+import Admin from './pages/admin'
+import ClaimList from './pages/claimList'
+import CreateClaim from './pages/createClaim'
+import NotFound from './pages/notFound'
+import './App.css'
 
 function App() {
 	return (
@@ -15,7 +15,7 @@ function App() {
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 		</div>
-	);
+	)
 }
 
-export default App;
+export default App

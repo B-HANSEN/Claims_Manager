@@ -1,6 +1,6 @@
-import ClaimsForm from '../../components/form';
-import Header from '../../components/header';
-import './createClaim.css';
+import ClaimsForm from '../../components/form'
+import Header from '../../components/header'
+import './createClaim.css'
 
 const CreateClaim = () => {
 	return (
@@ -11,7 +11,7 @@ const CreateClaim = () => {
 				<ClaimsForm />
 			</main>
 		</div>
-	);
-};
+	)
+}
 
-export default CreateClaim;
+export default CreateClaim

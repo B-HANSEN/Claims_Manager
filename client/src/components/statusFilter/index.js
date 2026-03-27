@@ -1,5 +1,5 @@
-import Form from 'react-bootstrap/Form';
-import './statusFilter.css';
+import Form from 'react-bootstrap/Form'
+import './statusFilter.css'
 
 const StatusFilter = ({ filter, setFilter }) => {
 	return (
@@ -22,7 +22,7 @@ const StatusFilter = ({ filter, setFilter }) => {
 				<option value='Rejected'>Rejected</option>
 			</Form.Select>
 		</div>
-	);
-};
+	)
+}
 
-export default StatusFilter;
+export default StatusFilter

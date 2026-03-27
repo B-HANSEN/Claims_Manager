@@ -1,20 +1,20 @@
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import { useState } from 'react'
+import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
 
 const Search = ({ setValue }) => {
-	const [query, setQuery] = useState('');
-	const [focused, setFocused] = useState(false);
+	const [query, setQuery] = useState('')
+	const [focused, setFocused] = useState(false)
 
 	const handleSubmit = (e) => {
-		e.preventDefault();
-		setValue(query);
-	};
+		e.preventDefault()
+		setValue(query)
+	}
 
 	const reset = () => {
-		setQuery('');
-		setValue('');
-	};
+		setQuery('')
+		setValue('')
+	}
 
 	return (
 		<Form onSubmit={(e) => handleSubmit(e)}>
@@ -25,12 +25,12 @@ const Search = ({ setValue }) => {
 					data-testid='search'
 					name='search'
 					onChange={(e) => {
-						setQuery(e.target.value);
-						setValue(e.target.value);
+						setQuery(e.target.value)
+						setValue(e.target.value)
 					}}
 					onFocus={() => {
-						setQuery('');
-						setFocused(true);
+						setQuery('')
+						setFocused(true)
 					}}
 					onBlur={() => setFocused(false)}
 					placeholder='Enter query here...'
@@ -49,7 +49,7 @@ const Search = ({ setValue }) => {
 				</Button>
 			</div>
 		</Form>
-	);
-};
+	)
+}
 
-export default Search;
+export default Search
