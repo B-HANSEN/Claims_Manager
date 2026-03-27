@@ -3,170 +3,17 @@
 exports[`Claim List Page tests > should match snapshot 1`] = `
 <DocumentFragment>
   <div>
-    <table
-      class="table table-striped table-hover table-sm"
-    >
-      <caption
-        class="visually-hidden"
-      >
-        Claims overview
-      </caption>
-      <thead>
-        <tr>
-          <th
-            scope="col"
-            style="cursor: default;"
-          >
-            Claim ID
-          </th>
-          <th
-            scope="col"
-            style="cursor: default;"
-          >
-            Status
-          </th>
-          <th
-            aria-sort="none"
-            scope="col"
-            style="cursor: pointer;"
-            tabindex="0"
-          >
-            Amount
-          </th>
-          <th
-            scope="col"
-            style="cursor: default;"
-          >
-            Holder
-          </th>
-          <th
-            scope="col"
-            style="cursor: default;"
-          >
-            Policy number
-          </th>
-          <th
-            scope="col"
-            style="cursor: default;"
-          >
-            Insured item
-          </th>
-          <th
-            scope="col"
-            style="cursor: default;"
-          >
-            Description
-          </th>
-          <th
-            scope="col"
-            style="cursor: default;"
-          >
-            Incident date
-          </th>
-          <th
-            aria-sort="none"
-            scope="col"
-            style="cursor: pointer;"
-            tabindex="0"
-          >
-            Processing fee
-          </th>
-          <th
-            aria-sort="none"
-            scope="col"
-            style="cursor: pointer;"
-            tabindex="0"
-          >
-            Total amount
-          </th>
-          <th
-            aria-sort="none"
-            scope="col"
-            style="cursor: pointer;"
-            tabindex="0"
-          >
-            Created at
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            CL-52026
-          </td>
-          <td>
-            Submitted
-          </td>
-          <td>
-            1641.00
-          </td>
-          <td>
-            Loren Harber DVM
-          </td>
-          <td>
-            TL-25580
-          </td>
-          <td>
-            Small Cotton Fish
-          </td>
-          <td>
-            Optio voluptatem in voluptas minus consequatur doloribus nemo voluptas vero est ipsam aut dolores nesciunt.
-          </td>
-          <td>
-            2022-05-25
-          </td>
-          <td>
-            86.00
-          </td>
-          <td />
-          <td>
-            2022-06-12
-          </td>
-        </tr>
-        <tr>
-          <td>
-            CL-25395
-          </td>
-          <td>
-            Approved
-          </td>
-          <td>
-            673.00
-          </td>
-          <td>
-            Loren Harber DVM
-          </td>
-          <td>
-            TL-25580
-          </td>
-          <td>
-            Handcrafted Metal Cheese
-          </td>
-          <td>
-            Qui alias dignissimos molestiae modi doloribus provident aut in laudantium repudiandae minus laborum modi molestias.
-          </td>
-          <td>
-            2022-01-31
-          </td>
-          <td>
-            121.00
-          </td>
-          <td />
-          <td>
-            2022-03-13
-          </td>
-        </tr>
-      </tbody>
-    </table>
     <nav
       aria-label="Table pagination"
+      style="margin: 16px 0px;"
     >
       <div
-        class="d-flex align-items-center gap-2"
+        class="d-flex align-items-center justify-content-center gap-2"
+        style="margin-bottom: 32px;"
       >
         <button
           aria-label="Previous page"
-          class="btn btn-outline-secondary btn-sm"
+          class="btn btn-sm pagination-btn btn-outline-secondary"
           disabled=""
         >
           Previous
@@ -178,13 +25,233 @@ exports[`Claim List Page tests > should match snapshot 1`] = `
         </span>
         <button
           aria-label="Next page"
-          class="btn btn-outline-secondary btn-sm"
+          class="btn btn-sm pagination-btn btn-outline-secondary"
           disabled=""
         >
           Next
         </button>
       </div>
     </nav>
+    <table
+      class="table table-striped table-hover table-sm table-bordered border-dark"
+      style="width: 100%;"
+    >
+      <caption
+        class="visually-hidden"
+      >
+        Claims overview
+      </caption>
+      <thead>
+        <tr>
+          <th
+            scope="col"
+            style="cursor: default; white-space: nowrap;"
+          >
+            #
+          </th>
+          <th
+            scope="col"
+            style="cursor: default; white-space: nowrap;"
+          >
+            Claim ID
+          </th>
+          <th
+            scope="col"
+            style="cursor: default; white-space: nowrap;"
+          >
+            Status
+          </th>
+          <th
+            aria-sort="none"
+            scope="col"
+            style="cursor: pointer; white-space: nowrap;"
+            tabindex="0"
+          >
+            Amount
+            <span
+              style="margin-left: 4px; font-weight: normal; opacity: 0.35;"
+            >
+              ↑
+            </span>
+          </th>
+          <th
+            scope="col"
+            style="cursor: default; white-space: nowrap;"
+          >
+            Holder
+          </th>
+          <th
+            scope="col"
+            style="cursor: default; white-space: nowrap;"
+          >
+            Policy number
+          </th>
+          <th
+            scope="col"
+            style="cursor: default; white-space: nowrap;"
+          >
+            Insured item
+          </th>
+          <th
+            scope="col"
+            style="cursor: default; white-space: nowrap;"
+          >
+            Incident date
+          </th>
+          <th
+            aria-sort="none"
+            scope="col"
+            style="cursor: pointer; white-space: nowrap;"
+            tabindex="0"
+          >
+            Processing fee
+            <span
+              style="margin-left: 4px; font-weight: normal; opacity: 0.35;"
+            >
+              ↑
+            </span>
+          </th>
+          <th
+            aria-sort="none"
+            scope="col"
+            style="cursor: pointer; white-space: nowrap;"
+            tabindex="0"
+          >
+            Total amount
+            <span
+              style="margin-left: 4px; font-weight: normal; opacity: 0.35;"
+            >
+              ↑
+            </span>
+          </th>
+          <th
+            aria-sort="none"
+            scope="col"
+            style="cursor: pointer; white-space: nowrap;"
+            tabindex="0"
+          >
+            Created at
+            <span
+              style="margin-left: 4px; font-weight: normal; opacity: 0.35;"
+            >
+              ↑
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            style="white-space: nowrap;"
+          >
+            1
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            CL-52026
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            Submitted
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            1641.00
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            Loren Harber DVM
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            TL-25580
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            Small Cotton Fish
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            2022-05-25
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            86.00
+          </td>
+          <td
+            style="white-space: nowrap;"
+          />
+          <td
+            style="white-space: nowrap;"
+          >
+            2022-06-12
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="white-space: nowrap;"
+          >
+            2
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            CL-25395
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            Approved
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            673.00
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            Loren Harber DVM
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            TL-25580
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            Handcrafted Metal Cheese
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            2022-01-31
+          </td>
+          <td
+            style="white-space: nowrap;"
+          >
+            121.00
+          </td>
+          <td
+            style="white-space: nowrap;"
+          />
+          <td
+            style="white-space: nowrap;"
+          >
+            2022-03-13
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </DocumentFragment>
 `;

@@ -33,7 +33,7 @@ exports[`Not Found Page tests > should match snapshot 1`] = `
       <br />
       <a
         class="btn btn-primary btn-lg"
-        href="/claims"
+        href="/"
       >
         Go Home
       </a>

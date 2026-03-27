@@ -18,13 +18,6 @@ describe('Search Page tests', () => {
 
 		fireEvent.change(input, { target: { value: 'CL-49085' } })
 		expect(input.value).toBe('CL-49085')
-
-		const submit = screen.getByRole('button', {
-			name: /submit/i,
-		})
-		expect(submit).toBeEnabled()
-		fireEvent.click(submit)
-
-		expect(handleValue).toHaveBeenCalledTimes(1)
+		expect(handleValue).toHaveBeenCalledWith('CL-49085')
 	})
 })

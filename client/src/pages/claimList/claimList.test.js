@@ -3,6 +3,10 @@ import '@testing-library/jest-dom'
 
 import ClaimList from '.'
 
+vi.mock('../../utility/endpoints', () => ({
+	getClaimsList: vi.fn().mockResolvedValue([]),
+}))
+
 beforeEach(() => {
 	render(<ClaimList />)
 })
@@ -26,9 +30,6 @@ describe('Claim List Page tests', () => {
 			name: /admin section/i,
 		})
 
-		const submit = screen.getByRole('button', {
-			name: /submit/i,
-		})
 		const reset = screen.getByRole('button', {
 			name: /reset/i,
 		})
@@ -42,8 +43,6 @@ describe('Claim List Page tests', () => {
 		expect(createNew).toBeEnabled()
 		expect(admin).toBeInTheDocument()
 		expect(admin).toBeEnabled()
-		expect(submit).toBeInTheDocument()
-		expect(submit).toBeEnabled()
 		expect(reset).toBeInTheDocument()
 		expect(reset).toBeEnabled()
 	})

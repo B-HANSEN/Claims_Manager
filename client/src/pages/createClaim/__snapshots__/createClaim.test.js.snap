@@ -8,9 +8,9 @@ exports[`Create Claim Page tests > should match snapshot 1`] = `
     <header
       class="Header"
     >
-      <h5>
-        Header component
-      </h5>
+      <h1>
+        Claims Manager
+      </h1>
     </header>
     <main
       class="CreateClaim__MainSection"
@@ -175,7 +175,7 @@ exports[`Create Claim Page tests > should match snapshot 1`] = `
           </div>
           <a
             class="mb-2 btn btn-outline-success btn-lg"
-            href="/claims"
+            href="/"
             role="button"
             tabindex="0"
           >
