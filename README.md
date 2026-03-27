@@ -9,7 +9,7 @@ A React 19 application for managing insurance claims, deployed on [Vercel](https
 The landing page (`/`) shows the claims overview with a table containing various claim details (holder name, insured item, incident date, amounts etc.).
 
 Available functions on the main screen:
-- **Search** by claim ID, holder name or policy number
+- **Search** by claim ID, holder name or policy number — live filtering on keystroke, partial matches supported (e.g. `52026` matches `CL-52026`)
 - **Filter** by claim status
 - **Sort** by amount, processing fee, total amount and creation date — sortable columns are indicated with arrows
 - **Pagination** — 10 rows per page with previous/next navigation
@@ -18,7 +18,7 @@ The description column adapts to available screen width: it wraps text and is hi
 
 A **Create a new claim** button routes the user to a form page where all fields are required. The claim is submitted via a POST request and added to the dataset.
 
-An **Admin section** is accessible at `/admin`.
+An **Admin section** is accessible at `/admin`. It is a placeholder for future functionality — administrators will be able to manage curated claims lists once authentication is in place.
 
 A **Not Found** page is shown for any unrecognised URL, with a link back to the main page.
 

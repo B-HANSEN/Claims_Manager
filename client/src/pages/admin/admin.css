@@ -2,8 +2,8 @@
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	min-height: calc(100vh - 130px);
-	padding-top: 130px;
+	padding-top: 144px;
 	text-align: center;
 }
