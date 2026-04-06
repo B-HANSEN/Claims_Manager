@@ -1,10 +1,31 @@
-# Getting Started with Create React App
+# All Claims
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Running the App
 
-## Available Scripts
+The easiest way to run the full app (frontend + backend) is from the **root** of the repository:
 
-In the project directory, you can run:
+```bash
+npm install
+npm run dev
+```
+
+This starts both servers concurrently:
+- **Frontend** (React) — [http://localhost:3000](http://localhost:3000)
+- **Backend** (mock API) — started via `mock/`
+
+### Individual scripts (from root)
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start frontend and backend together |
+| `npm run dev:frontend` | Start React frontend only |
+| `npm run dev:backend` | Start mock backend only |
+
+---
+
+## Client Scripts
+
+If you prefer to run the frontend on its own, from the `client/` directory:
 
 ### `yarn start`
 
