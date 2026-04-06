@@ -26,7 +26,7 @@ A **Not Found** page is shown for any unrecognised URL, with a link back to the 
 
 - [Frontend](/client): React 19 application built with Vite, using React Bootstrap for UI components, TanStack Table v8 for the claims table, and React Router v7 for routing.
 
-- [Backend](/mock): A local Express mock server reads and writes claims from a JSON file. In production, a Vercel serverless function serves the claims data.
+- [Backend](/mock): A local [Hono](https://hono.dev) mock server reads and writes claims from a JSON file. In production, a Vercel serverless function serves the claims data.
 
 ### Requirements
 
