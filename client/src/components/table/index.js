@@ -10,6 +10,14 @@ import {
 
 const shrink = { whiteSpace: 'nowrap' }
 
+const formatAmount = (value) => (value != null ? Number(value).toLocaleString('en-US') : value)
+
+const formatDate = (value) => {
+  if (!value) return value
+  const [year, month, day] = value.split('-')
+  return [day, month, year].join('.')
+}
+
 const columns = [
 	{
 		id: 'rowNumber',
@@ -24,7 +32,7 @@ const columns = [
 	},
 	{ accessorKey: 'number', header: 'Claim ID', enableSorting: false, meta: { style: shrink } },
 	{ accessorKey: 'status', header: 'Status', enableSorting: false, meta: { style: shrink } },
-	{ accessorKey: 'amount', header: 'Amount', meta: { style: shrink } },
+	{ accessorKey: 'amount', header: 'Amount', cell: (info) => formatAmount(info.getValue()), meta: { style: shrink } },
 	{ accessorKey: 'holder', header: 'Holder', enableSorting: false, meta: { style: shrink } },
 	{
 		accessorKey: 'policyNumber',
@@ -57,11 +65,12 @@ const columns = [
 		accessorKey: 'incidentDate',
 		header: 'Incident date',
 		enableSorting: false,
+		cell: (info) => formatDate(info.getValue()),
 		meta: { style: shrink },
 	},
-	{ accessorKey: 'processingFee', header: 'Processing fee', meta: { style: shrink } },
-	{ accessorKey: 'totalFee', header: 'Total amount', meta: { style: shrink } },
-	{ accessorKey: 'createdAt', header: 'Created at', meta: { style: shrink } },
+	{ accessorKey: 'processingFee', header: 'Processing fee', cell: (info) => formatAmount(info.getValue()), meta: { style: shrink } },
+	{ accessorKey: 'totalFee', header: 'Total amount', cell: (info) => formatAmount(info.getValue()), meta: { style: shrink } },
+	{ accessorKey: 'createdAt', header: 'Created at', cell: (info) => formatDate(info.getValue()), meta: { style: shrink } },
 ]
 
 const getAriaSort = (column) => {
