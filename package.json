@@ -1,0 +1,13 @@
+{
+  "name": "all-claims",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm --prefix mock run mock",
+    "dev:frontend": "npm --prefix client run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
