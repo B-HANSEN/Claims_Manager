@@ -12,11 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hono/node-server": "^1.0.0",
+    "@hono/node-server": "^2.0.0",
     "hono": "^4.0.0",
     "yup": "^1.0.0"
   },
   "devDependencies": {
-    "@faker-js/faker": "^9.0.0"
+    "@faker-js/faker": "^10.0.0"
   }
 }

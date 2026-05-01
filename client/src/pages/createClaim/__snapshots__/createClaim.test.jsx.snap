@@ -1,0 +1,196 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Create Claim Page tests > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="CreateClaim"
+  >
+    <header
+      class="Header"
+    >
+      <h1>
+        Claims Manager
+      </h1>
+    </header>
+    <main
+      class="CreateClaim__MainSection"
+      id="main-content"
+    >
+      <h1>
+        Create Claim
+      </h1>
+      <section
+        class="Form"
+      >
+        <form
+          class=""
+        >
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="policyNumber"
+            >
+              Policy number:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="policyNumber"
+                required=""
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="holder"
+            >
+              Holder name:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="holder"
+                required=""
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="insuredItem"
+            >
+              Insured item:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="insuredItem"
+                required=""
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="amount"
+            >
+              Claim amount:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="amount"
+                required=""
+                type="number"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="description"
+            >
+              Description:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="description"
+                required=""
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="incidentDate"
+            >
+              Incident Date:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="incidentDate"
+                placeholder="YYYY-MM-DD"
+                required=""
+                type="date"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-4 row"
+          >
+            <label
+              class="form-label col-form-label col-form-label-lg col-lg-2"
+              for="processingFee"
+            >
+              Processing Fee:
+            </label>
+            <div
+              class="col-sm-6"
+            >
+              <input
+                class="form-control form-control-lg"
+                id="processingFee"
+                required=""
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <a
+            class="mb-2 btn btn-outline-success btn-lg"
+            href="/"
+            role="button"
+            tabindex="0"
+          >
+            Show claim list
+          </a>
+           
+          <button
+            class="mb-2 btn btn-success btn-lg"
+            type="submit"
+          >
+            Add new claim
+          </button>
+        </form>
+      </section>
+    </main>
+  </div>
+</DocumentFragment>
+`;

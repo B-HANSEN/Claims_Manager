@@ -1,0 +1,262 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Claim List Page tests > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ClaimList"
+  >
+    <header
+      class="Header"
+    >
+      <h1>
+        Claims Manager
+      </h1>
+    </header>
+    <main
+      class="ClaimList__MainSection"
+      id="main-content"
+    >
+      <h1>
+        Overview claims
+      </h1>
+      <section
+        class="ClaimList__Filter"
+      >
+        <form
+          class=""
+        >
+          <label
+            class="form-label"
+          >
+            Search by ID, holder name or policy
+          </label>
+          <div
+            class="d-flex align-items-center gap-2"
+          >
+            <input
+              class="form-control form-control-lg"
+              data-testid="search"
+              id="search"
+              name="search"
+              placeholder="Enter query here..."
+              type="text"
+              value=""
+            />
+            <button
+              class="btn btn-outline-secondary btn-sm"
+              type="button"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+        <div
+          class="StatusFilter"
+        >
+          <p>
+            Filter by claim status
+          </p>
+          <select
+            aria-label="Filter claims by status"
+            class="StatusFilter__Select form-select form-select-lg"
+            data-testid="select"
+            id="status"
+          >
+            <option
+              value="ShowAll"
+            >
+              Show All
+            </option>
+            <option
+              value="Submitted"
+            >
+              Submitted
+            </option>
+            <option
+              value="Approved"
+            >
+              Approved
+            </option>
+            <option
+              value="Processed"
+            >
+              Processed
+            </option>
+            <option
+              value="Completed"
+            >
+              Completed
+            </option>
+            <option
+              value="Rejected"
+            >
+              Rejected
+            </option>
+          </select>
+        </div>
+      </section>
+      <a
+        class="mb-2 btn btn-outline-success btn-lg"
+        href="/admin"
+        role="button"
+        tabindex="0"
+      >
+        Admin Section
+      </a>
+       
+      <a
+        class="mb-2 btn btn-outline-success btn-lg"
+        href="/create-claim"
+        role="button"
+        tabindex="0"
+      >
+        Create a new claim
+      </a>
+      <section
+        class="ClaimList__Table"
+      >
+        <div>
+          <nav
+            aria-label="Table pagination"
+            style="margin: 16px 0px;"
+          >
+            <div
+              class="d-flex align-items-center justify-content-center gap-2"
+              style="margin-bottom: 32px;"
+            >
+              <button
+                aria-label="Previous page"
+                class="btn btn-sm pagination-btn btn-outline-secondary"
+                disabled=""
+              >
+                Previous
+              </button>
+              <span
+                aria-live="polite"
+              >
+                Page 1 of 0
+              </span>
+              <button
+                aria-label="Next page"
+                class="btn btn-sm pagination-btn btn-outline-secondary"
+                disabled=""
+              >
+                Next
+              </button>
+            </div>
+          </nav>
+          <table
+            class="table table-striped table-hover table-sm table-bordered border-dark"
+            style="width: 100%;"
+          >
+            <caption
+              class="visually-hidden"
+            >
+              Claims overview
+            </caption>
+            <thead>
+              <tr>
+                <th
+                  scope="col"
+                  style="cursor: default; white-space: nowrap;"
+                >
+                  #
+                </th>
+                <th
+                  scope="col"
+                  style="cursor: default; white-space: nowrap;"
+                >
+                  Claim ID
+                </th>
+                <th
+                  scope="col"
+                  style="cursor: default; white-space: nowrap;"
+                >
+                  Status
+                </th>
+                <th
+                  aria-sort="none"
+                  scope="col"
+                  style="cursor: pointer; white-space: nowrap;"
+                  tabindex="0"
+                >
+                  Amount
+                  <span
+                    style="margin-left: 4px; font-weight: normal; opacity: 0.35;"
+                  >
+                    ↑
+                  </span>
+                </th>
+                <th
+                  scope="col"
+                  style="cursor: default; white-space: nowrap;"
+                >
+                  Holder
+                </th>
+                <th
+                  scope="col"
+                  style="cursor: default; white-space: nowrap;"
+                >
+                  Policy number
+                </th>
+                <th
+                  scope="col"
+                  style="cursor: default; white-space: nowrap;"
+                >
+                  Insured item
+                </th>
+                <th
+                  scope="col"
+                  style="cursor: default; white-space: nowrap;"
+                >
+                  Incident date
+                </th>
+                <th
+                  aria-sort="none"
+                  scope="col"
+                  style="cursor: pointer; white-space: nowrap;"
+                  tabindex="0"
+                >
+                  Processing fee
+                  <span
+                    style="margin-left: 4px; font-weight: normal; opacity: 0.35;"
+                  >
+                    ↑
+                  </span>
+                </th>
+                <th
+                  aria-sort="none"
+                  scope="col"
+                  style="cursor: pointer; white-space: nowrap;"
+                  tabindex="0"
+                >
+                  Total amount
+                  <span
+                    style="margin-left: 4px; font-weight: normal; opacity: 0.35;"
+                  >
+                    ↑
+                  </span>
+                </th>
+                <th
+                  aria-sort="none"
+                  scope="col"
+                  style="cursor: pointer; white-space: nowrap;"
+                  tabindex="0"
+                >
+                  Created at
+                  <span
+                    style="margin-left: 4px; font-weight: normal; opacity: 0.35;"
+                  >
+                    ↑
+                  </span>
+                </th>
+              </tr>
+            </thead>
+            <tbody />
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</DocumentFragment>
+`;
