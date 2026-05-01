@@ -30,7 +30,7 @@ A **Not Found** page is shown for any unrecognised URL, with a link back to the 
 
 ### Requirements
 
-- Node v18.x or higher
+- Node v22.x or higher
 
 ### Start Application
 
@@ -53,7 +53,7 @@ The app will be running on http://localhost:3000.
 To start the test runner, run `npm test` from the `client/` directory. Tests are powered by [Vitest](https://vitest.dev/).
 
 - Unit tests and snapshot tests are included.
-- Test files are co-located with their components in `*.test.js` files.
+- Test files are co-located with their components in `*.test.jsx` files.
 
 ## Code Quality
 
