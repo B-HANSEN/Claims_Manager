@@ -1,12 +1,12 @@
-import { useState, useEffect, useRef } from 'react'
-import './table.css'
 import {
-	useReactTable,
-	getCoreRowModel,
-	getSortedRowModel,
-	getPaginationRowModel,
 	flexRender,
+	getCoreRowModel,
+	getPaginationRowModel,
+	getSortedRowModel,
+	useReactTable,
 } from '@tanstack/react-table'
+import { useEffect, useRef, useState } from 'react'
+import './table.css'
 
 const shrink = { whiteSpace: 'nowrap' }
 
@@ -126,6 +126,7 @@ const ClaimsTable = ({ filteredClaims }) => {
 		checkDescriptionVisibility.current?.()
 	}, [filteredClaims])
 
+	// eslint-disable-next-line react-hooks/incompatible-library -- already opted out via 'use no memo' above
 	const table = useReactTable({
 		data: filteredClaims ?? [],
 		columns,
