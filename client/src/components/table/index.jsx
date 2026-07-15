@@ -25,7 +25,7 @@ const columns = [
 		enableSorting: false,
 		cell: ({ row, table }) => {
 			const { pageIndex, pageSize } = table.getState().pagination
-			const positionInPage = table.getRowModel().rows.indexOf(row)
+			const positionInPage = table.getRowModel().rows.findIndex((r) => r.id === row.id)
 			return pageIndex * pageSize + positionInPage + 1
 		},
 		meta: { style: shrink },
