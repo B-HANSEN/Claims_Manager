@@ -1,8 +1,10 @@
-const { readFileSync } = require('fs');
-const { join } = require('path');
+import { readFileSync } from 'fs'
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
 
-const claims = JSON.parse(readFileSync(join(__dirname, '../../mock/assets/claims.json'), 'utf-8'));
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const claims = JSON.parse(readFileSync(join(__dirname, '../../mock/assets/claims.json'), 'utf-8'))
 
-module.exports = function handler(req, res) {
-	res.status(200).json(claims.slice(0, 25));
-};
+export default function handler(req, res) {
+	res.status(200).json(claims.slice(0, 25))
+}
